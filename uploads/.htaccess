@@ -1,0 +1,6 @@
+# Deny PHP execution in uploads folder
+<FilesMatch "\.php$">
+    Deny from all
+</FilesMatch>
+Options -ExecCGI
+AddHandler cgi-script .php .pl .py .jsp .asp .sh .cgi
